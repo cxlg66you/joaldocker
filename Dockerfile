@@ -4,7 +4,7 @@ WORKDIR /home/
 
 RUN apt update \
 && apt install wget unzip -y \
-&& wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/q/joal.zip" \
+&& wget --no-check-certificate "https://download.fastgit.org/cddc22/hhhh/releases/download/3.0/joal.zip" \
 && mkdir joal \
 && unzip joal.zip -d joal
 
