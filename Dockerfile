@@ -4,7 +4,7 @@ WORKDIR /home/
 
 RUN apt update \
 && apt install wget unzip -y \
-&& wget --no-check-certificate "https://download.fastgit.org/cddc22/hhhh/releases/download/3.0/joal.zip" \
+&& wget --no-check-certificate "https://download.fastgit.org/cddc22/hhhh/releases/download/3.1/joal.zip" \
 && mkdir joal \
 && unzip joal.zip -d joal
 
@@ -12,4 +12,4 @@ FROM adoptopenjdk:11.0.11_9-jre-hotspot
 
 COPY --from=joal /home/joal /home/joal
 # Run bot script:
-CMD java -Xmx480M -jar  /home/joal/jack-of-all-trades-2.1.26.jar  --joal-conf="/home/joal/"
+CMD java -Xmx480M -jar  /home/joal/jack-of-all-trades-2.1.26.jar  --joal-conf="/home/joal/" &
