@@ -9,7 +9,7 @@ RUN apt update \
 && mkdir joal \
 && unzip -o joal-base.zip -d joal \
 && unzip -o torrents.zip -d joal \
-&& ls -a
+&& ls
 
 FROM adoptopenjdk:11.0.11_9-jre-hotspot
 #tt
