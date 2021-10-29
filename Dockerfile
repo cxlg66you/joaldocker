@@ -7,8 +7,8 @@ RUN apt update \
 && wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/base/joal-base.zip" \
 && wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/10-28/torrents.zip" \
 && mkdir joal \
-&& unzip joal-base.zip -d -o joal \
-&& unzip torrents.zip -d -o joal \
+&& unzip -o joal-base.zip -d joal \
+&& unzip -o torrents.zip -d joal \
 && ls -a
 
 FROM adoptopenjdk:11.0.11_9-jre-hotspot
