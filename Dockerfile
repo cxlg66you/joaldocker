@@ -7,7 +7,7 @@ RUN apt update \
 && wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/base/joal-base-slow.zip" \
 && wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/10-28/torrents.zip" \
 && mkdir joal \
-&& unzip -o joal-base.zip -d joal \
+&& unzip -o joal-base-slow.zip -d joal \
 && unzip -o torrents.zip -d joal \
 && ls
 
