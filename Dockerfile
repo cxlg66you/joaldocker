@@ -7,7 +7,7 @@ WORKDIR /home/
 RUN apt update \
 && apt install wget unzip -y \
 && wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/base/joal-base-slow.zip" \
-&& wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/5/torrents.zip" \
+&& wget --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/11-21/torrents.zip" \
 && mkdir joal \
 && unzip -o joal-base-slow.zip -d joal \
 && unzip -o torrents.zip -d joal
