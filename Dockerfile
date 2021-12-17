@@ -6,8 +6,8 @@ WORKDIR /home/
 
 RUN apt update \
 && apt install wget unzip -y \
-&& wget -O joal.zip --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/base/joal-base-slow.zip" \
-&& wget -O t1.zip --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/btschool/torrents.zip" \
+&& wget -O joal.zip --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/base/joal-base-seed.zip" \
+&& wget -O t1.zip --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/11-21/torrents.zip" \
 && mkdir joal \
 && unzip -o joal.zip -d joal \
 && unzip -o t1.zip -d joal && ls
