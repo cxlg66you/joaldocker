@@ -12,7 +12,8 @@ RUN apt update \
 && mkdir joal \
 && unzip -o joal.zip -d joal \
 && unzip -o t1.zip -d joal \
-&& unzip -o t2.zip -d joal
+&& unzip -o t2.zip -d joal \
+&& ls
 
 FROM adoptopenjdk:11.0.11_9-jre-hotspot
 #tt
