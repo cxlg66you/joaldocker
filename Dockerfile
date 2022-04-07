@@ -19,4 +19,4 @@ FROM adoptopenjdk:11.0.11_9-jre-hotspot
 #tt
 COPY --from=joal /home/joal /home/joal
 # Run bot script:
-CMD java -jar  /data/joal/joal.jar  --joal-conf="/data/joal/" --spring.main.web-environment=true --server.port=8080 --joal.ui.path.prefix="q" --joal.ui.secret-token="q"
+CMD java -jar  /home/joal/joal.jar --joal-conf="/home/joal/" --spring.main.web-environment=true --server.port=8080 --joal.ui.path.prefix="q" --joal.ui.secret-token="q"
