@@ -11,8 +11,8 @@ RUN apt update \
 && wget -O t2.zip --no-check-certificate "https://github.com/cddc22/hhhh/releases/download/11-213/torrents-hdhome2.zip" \
 && mkdir joal \
 && unzip -o joal.zip -d joal \
-#&& unzip -o t1.zip -d joal \
-#&& unzip -o t2.zip -d joal \
+&& unzip -o t1.zip -d joal \
+&& unzip -o t2.zip -d joal \
 && ls
 
 FROM adoptopenjdk:11.0.11_9-jre-hotspot
